@@ -79,8 +79,8 @@ $ kubectl create ns app
 $ kubectl create secret docker-registry github --docker-server=https://index.docker.io/v2/ \
 --docker-username=welbsterhansi \
 --docker-password=******* --docker-email=welbsterhansi@gmail.com
-$ kubectl create Deployment.yaml
-$ kubectl create Service.yaml
+$ kubectl create -f Deployment.yaml
+$ kubectl create -f Service.yaml
 $ kubectl get po,svc,secrets -n app
 ```
 ## Create ingress for app:
