@@ -13,14 +13,30 @@ When you’re ready, deploy your application into your production environment, a
 
 ![Test Image 4](https://docs.docker.com/engine/images/architecture.svg)
 
-Docker X VMware:
+## How is Docker different from a virtual machine?
 
-![Test Image 4](https://i.ytimg.com/vi/TvnZTi_gaNc/maxresdefault.jpg)
+![Test Image 4](https://assets-global.website-files.com/5efc3ccdb72aaa7480ec8179/5f03f585f55f79c8b17ae7d2_containers-blog.png)
 
 
 ## What is Kubernetes? 
 
+![kubernetes](https://docs.microsoft.com/pt-br/azure/architecture/reference-architectures/containers/aks-microservices/images/aks.png)
+
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+* **Automated rollouts and rollbacks:** 
+
+Kubernetes progressively rolls out changes to your application or its configuration, while monitoring application health to ensure it doesn't kill all your instances at the same time. If something goes wrong, Kubernetes will rollback the change for you. Take advantage of a growing ecosystem of deployment solutions.
+* **Horizontal scaling:**
+
+Scale your application up and down with a simple command, with a UI, or automatically based on CPU usage.
+
+* **Secret and configuration management:**
+
+Deploy and update secrets and application configuration without rebuilding your image and without exposing secrets in your stack configuration.
+
+* **Self-healing:**
+
+Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.
 
 # DeployAKS
 Deploy a simple app with Docker , Terraform and Aks.
