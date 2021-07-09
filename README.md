@@ -1,6 +1,12 @@
 # DeployAKS
 Deploy a simple app with Docker , Terraform and Aks.
 
+## Clone repo:
+
+```
+$ git clone -b develop https://github.com/welbsterhansi/DeployAKS.git
+$ cd DeployAKS/
+```
 
 ## Login on Azure:
 
@@ -20,4 +26,7 @@ $ docker push welbsterhansi/atlantico-app:v.2.0
 $ terraform init
 $ terraform plan
 $ terraform apply --auto-approve
+$ terraform output kube_config > ~/.kube/aksconfig
+$ export KUBECONFIG=~/.kube/aksconfig
+$ kubectl get nodes
 ```
