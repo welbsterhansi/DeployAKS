@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appweb-atlantic
+  labels:
+    app: appweb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: appweb
+  template:
+    metadata:
+      labels:
+        app: appweb
+    spec:
+      containers:
+      - name: appweb
+        image: welbsterhansi/atlantico-app:v.1.1
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+       - name: github
