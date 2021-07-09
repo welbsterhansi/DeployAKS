@@ -44,7 +44,7 @@ Deploy a simple app with Docker , Terraform and Aks.
 ## Clone repo:
 
 ```
-$ git clone -b develop https://github.com/welbsterhansi/DeployAKS.git
+$ git clone https://github.com/welbsterhansi/DeployAKS.git
 $ cd DeployAKS/
 ```
 
