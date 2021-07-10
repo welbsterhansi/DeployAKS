@@ -96,4 +96,6 @@ $ helm install nginx-ingress ingress-nginx/ingress-nginx \
     --set controller.admissionWebhooks.patch.nodeSelector."beta\.kubernetes\.io/os"=linux
 $ kubectl --namespace ingress-basic get services -o wide -w nginx-ingress-ingress-nginx-controller
 $ kubectl create -f Ingress.yaml -n app
+$ kubectl get ingress -n app
+# Open your app on browser with ip of the ingress.
 ```
